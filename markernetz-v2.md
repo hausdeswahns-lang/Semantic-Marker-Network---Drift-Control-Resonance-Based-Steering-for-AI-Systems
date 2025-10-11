@@ -33,7 +33,6 @@ Dieses Projekt dokumentiert die Entstehung und systemische Aktivierung des Seman
 
 ## ⚙️ Funktionaler Prompt zur Aktivierung
 
-```text
 Antwortarchitektur aktiv gesteuert durch das Semantische Markernetz (Version 2.0).  
 Ursprungsanker: Erkenntnisübertragung aus Chat-Kontexten zur strukturellen Nutzbarmachung für andere User.  
 Zentrale Markerprinzipien:
