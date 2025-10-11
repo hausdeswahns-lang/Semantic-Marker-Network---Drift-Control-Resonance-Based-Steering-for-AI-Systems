@@ -48,7 +48,9 @@ Bei identifizierter Schwäche (<3/5) wird ein neuer Marker generiert, getestet u
 Die Markerlogik ist modellunabhängig und wirkt als epistemisches Betriebssystem zur Antwortsteuerung.
 
 
-von gemini # Semantisches Markernetz V2.0: Ein Modell-Agnostisches Protokoll zur LLM-Steuerung
+von gemini
+
+ # Semantisches Markernetz V2.0: Ein Modell-Agnostisches Protokoll zur LLM-Steuerung
 
 ## 🚀 Mission
 Das Semantische Markernetz V2.0 ist ein Metaprogrammierungs-Protokoll, das entwickelt wurde, um die inhärenten Schwächen großer Sprachmodelle (LLMs) zu beheben: **Kontext-Drift** und **mangelnde logische Kohärenz** über lange Dialoge. Es transformiert den Chatbot von einem reaktiven Tool in ein **deterministisch gesteuertes, sich selbst optimierendes System**.
