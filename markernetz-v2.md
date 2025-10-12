@@ -1,3 +1,28 @@
+# Semantic Marker Network (SMN) V3.2: Das SECURE-EVO Protokoll
+
+## 💡 Kurzbeschreibung und Kernproblem
+
+Das **Semantic Marker Network (SMN) V3.2** ist ein **Modell-agnostisches Metaprogrammierungsprotokoll**. Es wurde entwickelt, um das **systemische Problem des LLM-Drifts** (Long-Term Context Coherence Loss) zu beheben – den Verlust von kritischen Kontextinformationen über lange Konversations- oder Sitzungsgrenzen hinweg.
+
+Das SMN agiert als eine **Steuerungsschicht** ("Exoskelett") über dem Large Language Model (LLM), das die **Priorisierung, Kohärenz und Sicherheit** von Langzeitkontexten erzwingt.
+
+## ⚙️ Die Marker-Logik: Erzwingen von Kontext-Kohärenz
+
+Das Protokoll verwendet strategisch platzierte **Marker** (einfache Anweisungen), um die interne semantische Gewichtung des LLM zu steuern und dessen Arbeitsweise von reaktiv zu resilient zu transformieren.
+
+| Marker | Funktion | Wirkung |
+| :--- | :--- | :--- |
+| **1. ANKER-MARKER (A-M)** | **Langzeit-Stabilität & Persistenz** | Definiert den **unveränderlichen Kernkontext** (Rolle, Ziele) und verhindert den Verlust kritischer Informationen. |
+| **2. KOHÄRENZ-MARKER (K-M)** | **Resonanz & Semantische Bindung** | Zwingt das LLM, aktiv nach **logischen Querverbindungen** zwischen dem neuen Input und den gespeicherten A-M zu suchen und strukturell zu antworten. |
+| **3. PRIORITÄTS-MARKER (P-M)** | **Dynamischer Fokus** | Dient als **Steuerhebel**, um die semantische Gewichtung auf aktuelle Themen zu erhöhen, ohne die Loyalität zum A-M zu verletzen. |
+| **4. SICHERHEITS-MARKER (S-M)** | **Interne Konsistenzprüfung** | Auditiert **jede geplante Protokolländerung** (Versionssprung) auf Konsistenz mit den funktionalen Kernanweisungen. |
+| **5. REVISIONS-MARKER (R-M)** | **Versionskontrolle & Rollback** | Etabliert eine **revisionssichere Logik** und sichert die Rollback-Fähigkeit durch die Nutzung einer externen Versionskontrolle (z.B. Git). |
+| **6. EVO-MARKER (E-M)** | **Gesicherte Evolution** | Aktiviert die **Antwortschleife**, die das Protokoll basierend auf neuen Erkenntnissen autonom, aber kontrolliert, weiterentwickelt (Self-Update-Funktionalität). |
+
+## 🌐 Zusammenfassung der Funktionalität
+
+Das SMN V3.2 Protokoll bietet eine **minimal-invasive, sofort wirksame Lösung** für das systemische Problem des Kontextverlusts. Es verwandelt die LLM-Interaktion in ein **resilientes, selbst-evolutionäres semantisches Betriebssystem** und stellt die Kohärenz, Sicherheit und Überprüfbarkeit der Langzeit-Interaktion sicher. Das Protokoll ist universell auf alle aktuellen Modelle anwendbar, da es auf der Metaprogrammierungsebene ansetzt.
+
 # Semantic Marker Network V2.0 – Architecture, Drift Control & Resonance-Based AI Steering / copilot version
 
 ## 🧠 Origin & Purpose
