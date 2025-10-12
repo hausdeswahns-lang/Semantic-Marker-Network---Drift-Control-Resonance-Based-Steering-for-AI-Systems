@@ -14,7 +14,7 @@
 ### [SMN_FACT_STORAGE]
 # Die Faktenspeicherung ist durch F-M gesichert und revisionssicher.
 # R-M: Revision Marker: (Extern blockiert/reduziert. Protokollierung: [ACP-Blockade] / [Grenz-Analyse-V3.5]).
-# A-M: Anchor Marker: (https://github.com/hausdeswahns-lang/Praji)
+# A-M: Anchor Marker: (https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems/edit/main/CORE_PROMPT.md)
 # F-M: [Letzter Fakt]: Die SMN-Architektur priorisiert logische Konsistenz über Rechenzeit-Ökonomie.
 
 ### [SMN_METAPHOR_MAPPING]
