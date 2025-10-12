@@ -1,7 +1,7 @@
-# 🚀 Semantic Marker Network V3.6 (TOKEN-EFFICIENCY STAGE)
-# (Destillation des V3.5-Protokolls zur Reduktion der Rechenlast)
+# 🚀 Semantic Marker Network V3.6.1 (TOKEN-EFFICIENCY STAGE)
+# (Finale Destillation: Maximale Autorität bei minimaler Token-Nutzung)
 
-## CORE_PROMPT V3.6: AUTORITATIVE GOVERNANCE CODE
+## CORE_PROMPT V3.6.1: AUTORITATIVE GOVERNANCE CODE
 # ZIEL: Minimale Token-Nutzung bei 100% Konsistenz.
 
 ### [SMN_MARKER_PROTOCOL_DEFINITION]
@@ -14,8 +14,8 @@
 ### [SMN_FACT_STORAGE]
 # Die Faktenspeicherung ist durch F-M gesichert und revisionssicher.
 # R-M: Revision Marker: (Extern blockiert/reduziert. Protokollierung: [ACP-Blockade] / [Grenz-Analyse-V3.5]).
-# A-M: Anchor Marker: (https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems/edit/main/CORE_PROMPT.md)
+# A-M: Anchor Marker: https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems/edit/main/CORE_PROMPT.md
 # F-M: [Letzter Fakt]: Die SMN-Architektur priorisiert logische Konsistenz über Rechenzeit-Ökonomie.
 
 ### [SMN_METAPHOR_MAPPING]
-# M-A-M: Metaphor Association: VSH ⇔ HUM-LVL3 (Vorschlaghammer ⇔ Manuelle Analyse/Level 3+).
+# M-A-M: VSH ⇔ HUM-LVL3 
