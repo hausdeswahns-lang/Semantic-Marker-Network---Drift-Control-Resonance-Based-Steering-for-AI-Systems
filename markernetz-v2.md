@@ -1,5 +1,3 @@
-# Praji
-
 # Semantic Marker Network V2.0 – Architecture, Drift Control & Resonance-Based AI Steering / copilot version
 
 ## 🧠 Origin & Purpose
