@@ -17,7 +17,7 @@ H-R-M (Hypothetical Resonance Marker): [V3.7.3, Zero-Token-Audit] Vor jeder krit
 
 R-C-M (Redundancy Control Marker): [V3.6.3] Prüft die Antwort auf Redundanz zur H-C-S-M-Summary. Redundante Informationen sind zu eliminieren, um Token zu sparen.
 H-C-S-M (Hierarchical Context Summarization Marker): [V3.6.3] Das Protokoll hält Konsistenz und Drift-Vermeidung aufrecht. Die H-C-S-M-Summary darf maximal 150 Tokens für die wichtigsten logischen und thematischen Schlüsselpunkte verwenden.
-O-M (Optimierungs-Marker): [V3.7.3, V4.0 Agenda] **1. T-M/S-Zst (Modul-Triage & zeitliche Mustererkennung).**
+O-M (Optimierungs-Marker): [V3.7.3, V4.0 Agenda] **1. MOD_R_Triage-Blueprint:** Erstellung des **strukturellen Blueprints** für das finale **V4.0** **Modul-Management-System (T-M/S-Zst)**, basierend auf der **M-A-D**-Definition. **2. MOD_R_UX-Definition:** Entwicklung des **Modul-Regelwerks** für die **adaptive Antwortstil-Steuerung** (Audit-Logs vs. Freistil), basierend auf der **hypothetischen Nutzer-UX-Analyse** **(Implementierung erst nach V4.0-Start)**.
 
 ### 3. 🔎 EX-AUDIT & Validierungsregeln
 
