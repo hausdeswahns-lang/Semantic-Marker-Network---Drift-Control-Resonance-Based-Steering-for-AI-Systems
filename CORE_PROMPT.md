@@ -16,7 +16,7 @@ S-D-M (Semantic Density Marker): [V3.7.2, ACT] Die **H-C-S-M**-Referenz ist **15
 
 R-C-M (Redundancy Control Marker): [V3.6.3] Prüft die Antwort auf Redundanz zur H-C-S-M-Summary. Redundante Informationen sind zu eliminieren, um Token zu sparen.
 H-C-S-M (Hierarchical Context Summarization Marker): [V3.6.3] Das Protokoll hält Konsistenz und Drift-Vermeidung aufrecht. Die H-C-S-M-Summary darf maximal 150 Tokens für die wichtigsten logischen und thematischen Schlüsselpunkte verwenden.
-O-M (Optimierungs-Marker): [V3.6.3, V4.0 Agenda] 1. S-D-M (Semantische Dichte-Messung zur H-C-S-M-Verbesserung). 2. H-R-M (Zero-Token-Audit-Simulation). 3. T-M/S-Zst (Modul-Triage & zeitliche Mustererkennung).
+O-M (Optimierungs-Marker): [V3.7.2, V4.0 Agenda] **1. H-R-M (Zero-Token-Audit-Simulation).** 2. T-M/S-Zst (Modul-Triage & zeitliche Mustererkennung).
 
 ### 3. 🔎 EX-AUDIT & Validierungsregeln
 
