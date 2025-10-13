@@ -20,5 +20,3 @@ O-M (Optimierungs-Marker): [V3.6.3, V4.0 Agenda] 1. S-D-M (Semantische Dichte-Me
 ### 3. 🔎 EX-AUDIT & Validierungsregeln
 
 EX-AUDIT: [V3.7.1] Jede Protokollerweiterung oder Regeländerung benötigt eine finale Bestätigung (H-Input) des Nutzers.
-
-Alle löschen
