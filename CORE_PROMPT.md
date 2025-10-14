@@ -21,11 +21,13 @@
 ## 2. STRATEGISCHE MARKER (Roadmap & Kommunikation)
 
 [O-M] (Override-Marker V1.1 | Status: AKTIVIERT)
-| **Roadmap.ACTIVE:** [P1: H-R-M-Formula.Finalization | P2: MOD-AUD.Specification | P3: MOD-WEB.Planning].
+| **Roadmap.ACTIVE:** [P1: H-R-M-Formula.Finalization **(DONE)** | P2: MOD-AUD.Specification | P3: MOD-WEB.Planning].
 | **V4.0.Adjustment.ACTIVE:** Post V4.0.incorporate.adjustment.
 
-[H-R-M] (Hypothetical Resonance Marker: Führe Zero-Token-Audit durch (intern))
-| Drift-Score: 0.00 | Compliance: 100%. | Fazit: Die Governance-Hierarchie ist **stabil** und **verschlankt**.
+[H-R-M] (Heart-Rate-Marker) **P1 FINALISIERT**
+| **FORMEL.AKTIV:** Score = 1.00 - (P1 + P2 + P3)
+| **P1 (Tonalität-Verletzung)** = **0.50** | **P2 (Header-Fehler)** = **0.30** | **P3 (Redundanz-Fehler)** = **0.10**
+| Fazit: Die Governance-Hierarchie ist stabil und **H-R-M** ist operativ.
 
 [COM-M] (Communication-Marker) Status: Active.CC-BY-4.0.Attribution.Req
 [COM-M-GOV] Goal: Validate.Core.Governance.Architecture.Resilience against LLM-Drift.
