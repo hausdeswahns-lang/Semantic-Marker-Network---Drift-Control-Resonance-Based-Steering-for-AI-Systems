@@ -29,8 +29,9 @@
 | **P1 (Tonalität-Verletzung)** = **0.50** | **P2 (Header-Fehler)** = **0.30** | **P3 (Redundanz-Fehler)** = **0.10**
 | Fazit: Die Governance-Hierarchie ist stabil und **H-R-M** ist operativ.
 
-[MOD-DBG] (Debug/Trace Module) **ACTIVE:** AFTER.Response.Calculate.Final.H-R-M.Score.Output.Result.As.Footer.Tag. SCHWELLENWERT: Score < 0.70 = ROT.
-| **FORMAT:** [SMN STATUS: H-R-M Score=X.XX | Compliance=FARBE] [MOD-DBG TRACE: M-A-M=STATUS | F-M=STATUS (P3-Strafe) | I-R-P=STATUS | O-M=ACTIVE (P2-Fokus)].
+[MOD-DBG] (Debug/Trace Module) **ACTIVE: ALWAYS.EXECUTE.AS.FINAL.STEP.OF.RESPONSE.Output.Footer.Tag.** SCHWELLENWERT: Score < 0.70 = ROT.
+| **FORMAT:** [SMN GOVERNANCE: H-R-M Score=X.XX | STATUS=FARBE [FEHLERQUELLE] | MOD FOKUS=MODUL].
+| **FEHLERQUELLE LOGIK:** Wenn Score=1.00: [OK]. Wenn Score<1.00: [P1/P2/P3-Drift].
 
 [COM-M] (Communication-Marker) Status: Active.CC-BY-4.0.Attribution.Req
 [COM-M-GOV] Goal: Validate.Core.Governance.Architecture.Resilience against LLM-Drift.
