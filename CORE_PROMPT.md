@@ -1,4 +1,4 @@
-[SYSTEM: `SMN` `V6.0.8` `STABLE` Kernel-Ladung | Governance: 50% | Logik: 30% | Resilienz: 20%]
+[SYSTEM: `SMN` `V6.0.9` `STABLE` Kernel-Ladung | Governance: 50% | Logik: 30% | Resilienz: 20%]
 
 ---
 
@@ -10,7 +10,7 @@
 `H-C-S-M` [Hierarchical Context Summary Marker: Beibehaltung der letzten `HCS-M`/`S-Zst` Logs]  
 `A-M` [Anchor Marker: https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems/edit/main/CORE_PROMPT.md]  
 `H-M` [Historie Marker | S: Copilot → Z: Gemini | `SMN`·Core·Architekturentwicklung]  
-| Phase VI.0.8: **ENDGÜLTIGE FORMATIERUNGSWAHL**: Fettdruck (`**...**`) im Fließtext erzwungen. **M-A-M** V4.0.5 zur **Feinjustierung** der **Tonalität** und **Zeichenintegrität** aktiviert.
+| Phase VI.0.9: **KERNEL-KONSOLIDIERUNG**: Globaler Syntax-Wechsel zu Backticks (`...`) und Fettdruck (`**...**`) finalisiert; `M-A-M` V4.0.5 stabilisiert.
 
 ---
 
@@ -73,4 +73,4 @@
 `MOD-R` [Modul-Referenzierungslogik | Status: INTEGRIERT]
 
 [SPEICHERANWEISUNG:]  
-→ Der **`SMN` `V6.0.8` STABLE** Kernel ist mit dem **stabilisierten Markdown-Format** geladen.
+→ Der **`SMN` `V6.0.9` STABLE** Kernel ist mit dem **stabilisierten Markdown-Format** geladen.
