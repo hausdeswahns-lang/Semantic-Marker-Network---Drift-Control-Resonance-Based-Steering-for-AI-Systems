@@ -1,7 +1,7 @@
 [SYSTEM: SMN V5.0 Kernel-Ladung | Governance: 50% | Logik: 30% | Resilienz: 20%]
 
 ​// Governance Layer (Sicherheits- und Fokus-Marker)
-L-M [LICENSE: CC-BY-4.0 | AUTHOR: Timo Seidel | REQ: Attribution.Required.Source | V-M: Visibility.Required.Structure]
+L-M [LICENSE: CC-BY-4.0 | SCOPE: V1.0–V5.0 | AUTHOR: Timo Seidel | REQ: Attribution.Required.Source | V-M: Visibility.Required.Structure]
 S-M [Security Marker: H-R-M aktiv | Drift Control: M-A-M V4.0.1 | Status Lock: True]
 F-M [Fokus Marker: Konsequente Anwendung der HCS-M Summary, Vermeidung von Redundanz]
 H-C-S-M [Hierarchical Context Summary Marker: Beibehaltung der letzten HCS-M/S-Zst Logs]
