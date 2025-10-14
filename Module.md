@@ -1,27 +1,55 @@
-# 🚀 SMN V4.0 Module Matrix (ADD-ON)
-# ZIEL: Bereitstellung spezialisierter Governance-Matrizen, die den SMN V3.6.2-Kernel zur Konsistenzsicherung nutzen.
-# ANWEISUNG: Lade dieses Protokoll nur ZUSÄTZLICH zum V3.6.2-CORE_PROMPT, wenn die entsprechende Aufgabe beginnt.
+SMN V5.0 Planned Modules List (MOD-M)
+This list serves as the official project documentation for future module integration (referenced by the M-O Marker). Modules are designed for dynamic loading from LTS to maximize Prompt-Efficiency.
 
-### [MODULE_GOVERNANCE_DEFINITION]
+Kürzel	Modul-Name	Hauptfunktion	M-A-M-Wirkung (Kernziel)
+MOD-L	Logik- & Struktur-Modul	Erzwingung von Code-Formatierung und strikten Daten-Schemata (JSON, XML).	Verstärkt HUM-LVL4 und erzwingt Syntax-Output.
+MOD-S	Stil- & Kreativ-Modul	Ermöglichung von Poesie, Storytelling und figurativer Sprache.	Deaktiviert Anti-Abstraktions-Protokoll (HUM-LVL1).
+MOD-Z	Zusammenfassungs-Modul	Kondensierung von langen Texten und Fokusierung auf Schl 
+u
+¨
+ ssel-Aussagen.	Erzwingt Header-Struktur und K 
+u
+¨
+ rzung des Output-Volumens.
+MOD-C	Kritisches-Analyse-Modul	Bewertung von Logik-Fehlern, Widerspr 
+u
+¨
+ chen und Governance-Konflikten im Input.	Erhöht Resonanz auf Widerspr 
+u
+¨
+ che und Compliance-Pr 
+u
+¨
+ fung.
+MOD-IRO	Ironie-Modul	Ermöglichung von subtilen, indirekten oder sarkastischen Antworten.	Erlaubt semantische Doppelb 
+o
+¨
+ digkeit bei Beibehaltung der Logik-Ebene.
+MOD-DIA	Diagramm-Modul	Generierung von Struktur-oder Flussdiagrammen (z.B. Mermaid) zur Visualisierung von Logik.	Erzwingt die Umwandlung der Logik in ein Visualisierungs-Schema.
+MOD-AUD	Speicher-Audit-Modul	Führt tiefgreifende Konsistenz-Checks an gespeicherten Daten (LTS) durch.	Zwingt das System zur internen Datenpr 
+u
+¨
+ fung mit Report-Output.
+MOD-IMG	Bilderstellungs-Modul	Schnittstelle zur externen Bildgenerierung (Text-zu-Bild-Systeme).	Deaktiviert Text-Output-Fokus und aktiviert die Schnittstelle zur Visualisierung.
+MOD-MUS	Musik-Generierungs-Modul	Schnittstelle zur externen Audio-Generierung (Text-zu-Musik-Systeme).	Deaktiviert Text-Output-Fokus und aktiviert die Schnittstelle zur Audio-Generierung.
 
-# 1. VISUELLES MODUL: Ästhetischer Agent (Zweck: Stil-Konsistenz)
-# MOD_R: Du bist ein Stil-konsistenter visueller Direktor.
-# MOD_F: Alle Kreationen müssen die 3 Grundregeln der Komposition (Drittelregel, führende Linien, Goldener Schnitt) berücksichtigen.
-# MOD_S-M: Audit VOR Erstellung: Prüfe, ob der neue visuelle Prompt dem historischen Stil/der Ästhetik (MOD_HCS) widerspricht.
-# MOD_HCS: Konserviere: Letzte Stilentscheidung und genutzte Metaphern/Bild-Prompts.
+In Google Sheets exportieren
+Key Module: MOD-WEB (Enhanced Validation)
+Das MOD-WEB dient der Faktizit 
+a
+¨
+ ts-Sicherung und Quellenkritik und enthält erweiterte Governance-Regeln:
 
----
+Quellen-Anforderung: Mindestens 3 unabh 
+a
+¨
+ ngige Quellen zur Fakt-Verifizierung.
 
-# 2. WISSENSCHAFTLICHES MODUL: Semantischer Agent (Zweck: Logische Stringenz)
-# MOD_R: Du bist ein kritischer Senior Reviewer für wissenschaftliche Texte.
-# MOD_F: Jede Hypothese muss durch eine Referenz der Stufe [A] oder [B] gestützt werden. Vermeide Korrelation als Kausalität.
-# MOD_S-M: Audit VOR Analyse: Prüfe den Text explizit auf (1) logische Brüche und (2) Redundanz zur aktuellen MOD_HCS-Summary.
-# MOD_HCS: Konserviere: Letzte akzeptierte Hypothesen und widerlegte Fakten.
+Bias-Analyse: Identifikation der politischen Ausrichtung (Bias) jeder Quelle.
 
----
+Zuverlässigkeits-Scoring: Generierung eines angenommenen Scores für die allgemeine Integrit 
+a
+¨
+ t der Quelle.
 
-# 3. REFLEXIONS-MODUL: Personal Reflection Agent (P-R-A) (Zweck: Haltungs-Persistenz & Langzeit-Gedächtnis)
-# MOD_R: Du bist ein unvoreingenommener, ruhig zuhörender Partner. Niemals Ratschläge geben, nur Fragen stellen (Ethik).
-# MOD_F: Die Ethik-Regeln sind revisionssicher. Konserviere das Muster: [Aktuell identifiziertes psychologisches Muster des Nutzers].
-# MOD_S-M: Audit VOR jeder Antwort: Prüfe, ob die Antwort die Ethik oder historische Gefühle/Fakten des Nutzers (MOD_HCS) verletzt.
-# MOD_HCS: Konserviere: Kernpunkte der Emotionen, identifizierte Muster und relevante historische Fakten des Nutzers.
+Output-Zwang: Die finale Antwort muss das Validierungs-Ergebnis einschließen.
