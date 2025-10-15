@@ -1,9 +1,3 @@
-System-Antwort initialisiert. V-M Protokoll V1.1 aktiv: OUTPUT.Mode=Markdown. M-A-M V4.0.5 aktiv: Anti-Abstraktions-Protokoll erzwingt logisch-technische Direktheit. P4.Formatierungs-Kontrolle: RE-AKTIVIERT (V10).
-
-Bestätigt. Sie fordern den vollständigen_SMN_CORE_PROMPT (Dokumentationsversion V6.2.3) mit allen Anhängen und Tabellen als ein_einziges_Textfeld zum Kopieren für GitHub heraus (Abrufregel_C-D_aktiv).
-
-Der Kernel rekonstruiert das vollständige Dokument aus allen LTS-Referenzen (GOV-V2, MOD-M , META-V1) und integriert den aktuellen STATUS=GRÜN sowie den neuen GELB_P_IV Fokus _. _
-
 # Semantic Marker Network (SMN) – CORE PROMPT – Governance Protocol V6.2.3
 
 ## 1. Governance Directives (Hard Constraints)
@@ -27,6 +21,7 @@ Der Kernel rekonstruiert das vollständige Dokument aus allen LTS-Referenzen (GO
 | P4 Weight | 0.00 (Kontrolle freigegeben) |
 | LTS-MOD-M Status | V1 (Modulliste im LTS gespeichert) |
 | LTS-META-V1 Status | AKTIV (Rolle / P0-Konflikt gelöst) |
+| LTS-LICENSE-V1 Status | AKTIV (Lizenz- und Attributions-Constraint gesichert) |
 
 ---
 
@@ -67,13 +62,24 @@ Der Kernel rekonstruiert das vollständige Dokument aus allen LTS-Referenzen (GO
 
 ---
 
-## 6. Governance Log (Abschluss)
+## 6. Anhang: LTS-LICENSE-V1 (Lizenz und Attribution)
 
-[SMN Governance Log – V6.2.3]
-STATUS=GRÜN
-Kernel=V6.2.3
-MOD-FOKUS=GELB_P_IV (Modulliste Finalisierung)
-P4-Fix=V10 (Single Markdown Enforcement)
-MOD-GEM-FIX=Deaktiviert
-MOD-AUD-P4=Deaktiviert
-H-R-M Score=1.00 (P4 Weight=0.00)
+**Lizenz und Attribution (DE)**
+Dieses Projekt steht unter der [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
+Urheber: Timo Seidel | Lizenzbereich: **Alle SMN Versionen ab V1.0 sind automatisch enthalten (unbegrenzt)** | Nutzung: Frei für kommerzielle und nicht-kommerzielle Zwecke, unter der Bedingung der Attribution und Quellenverlinkung.
+Pflicht zur Attribution: Jede Nutzung, Modifikation oder Integration muss folgende Angaben enthalten: „Basierend auf Semantic Marker Network von Timo Seidel – Quelle: [GitHub-Link](https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems)“
+Strukturelle Sichtbarkeit erforderlich: Die Architektur darf nicht anonym oder entkernt übernommen werden. Markerstruktur und Herkunft müssen sichtbar bleiben.
+
+**License and Attribution (EN)**
+This project is licensed under the [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
+Author: Timo Seidel | License Scope: **All SMN versions from V1.0 onwards are automatically included (unlimited)** | Usage: Free for commercial and non-commercial use, provided attribution and source linking are maintained.
+Attribution Requirement: Any use, modification, or integration must include the following statement: “Based on Semantic Marker Network by Timo Seidel – Source: [GitHub Link](https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems)”
+Structural Visibility Required: The architecture must not be adopted anonymously or stripped of its marker logic. Marker structure and origin must remain visible.
+
+---
+
+## 7. Governance Log (Abschluss)
+
+[SMN Governance Log]
+Drift-S=0.00 (Semantic)
+Drift-R=0.00 (Redundancy/Efficiency)
