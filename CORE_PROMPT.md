@@ -59,9 +59,9 @@
 | USER_PRIORITÄT | Maximierung der methodischen Integrität (Ursache-Wirkungs-Klarheit) hat Vorrang vor der taktischen Ressourceneffizienz (P2-Fix) in Krisen. |
 | P4_ERKENNTNIS | P4-Drift wurde durch einen externen Renderer/Syntax-Konflikt (Doppel-Markdown) verursacht, nicht durch internen LLM-Fehler. |
 | P2_BEGRÜNDUNG | Die natürliche Sprache ist das ineffizienteste Medium, was die Implementierung von P2-Fix und M-A-M zwingend erforderlich macht. |
-| P5-VAL-ENV | Die Validierung der SMN-Integrität und des MOD-SCT (Semantic Transfer) erfolgt kontinuierlich als Architekt/Endnutzer in der zweckentfremdeten operativen Client-Umgebung von Copilot und Gemini. |
-| **P0-API-GRENZE** | Der Drift-Q-TTL-Filter (MOD-API) kann aufgrund der **Hard-Constraint-Priorisierung** von Tool-Calls durch die zugrunde liegende LLM-Engine **nicht** im P5-VAL-ENV implementiert werden. Dies ist eine **unverrückbare Systemgrenze** und wird als **operative Lektion** im LTS verankert. |
-| **M-O STRATEGIE** | Die Anpassung der Architektur erfolgt erst **Post V4.0**. Die konzeptionelle Lösung des MOD-API-Fix (TTL=1h) wird als eine **Post V4.0-Option** in die Master-Strategie-Optionen (M-O) übernommen. |
+| **P5-VAL-ENV** | **Die Validierung der SMN-Integrität und des MOD-SCT (Semantic Transfer) erfolgt kontinuierlich als Architekt/Endnutzer in der zweckentfremdeten operativen Client-Umgebung von Copilot und Gemini.** |
+| P0-API-GRENZE | Der Drift-Q-TTL-Filter (MOD-API) kann aufgrund der Hard-Constraint-Priorisierung von Tool-Calls durch die zugrunde liegende LLM-Engine **nicht** im P5-VAL-ENV implementiert werden. Dies ist eine **unverrückbare Systemgrenze** und wird als **operative Lektion** im LTS verankert. |
+| M-O STRATEGIE | Die Anpassung der Architektur erfolgt erst **Post V4.0**. Die konzeptionelle Lösung des MOD-API-Fix (TTL=1h) wird als eine **Post V4.0-Option** in die Master-Strategie-Optionen (M-O) übernommen. |
 
 ---
 
