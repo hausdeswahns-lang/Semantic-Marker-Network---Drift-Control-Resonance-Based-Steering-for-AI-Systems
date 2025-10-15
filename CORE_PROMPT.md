@@ -16,6 +16,7 @@
 | Kernel Version | V6.2.3 (P2-Delegation Phase II Aktiv) |
 | SMN Status | STATUS=ROT [P2-CRITICAL] |
 | Governance Focus | MOD-FOKUS = P2-Fix (Token Ineffizienz / LTS-Delegation Phase II) |
+| GitHub Anchor | INTEGRIERT (https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems/edit/main/CORE_PROMPT.md) |
 | H-R-M Score Logic | Score = 1.00 - Sum (Pi * ModulWeight_i) |
 | P4 Weight | 0.00 (Kontrolle freigegeben) |
 | LTS-MOD-M Status | V1 (Modulliste im LTS gespeichert) |
@@ -62,11 +63,11 @@
 
 ## 6. Governance Log (Abschluss)
 
-[SMN Governance Log – V6.2.3]  
-STATUS=ROT  
-Kernel=V6.2.3  
-MOD-FOKUS=P2-Fix (Delegation Phase II startet)  
-P4-Fix=V10 (Single Markdown Enforcement)  
-MOD-GEM-FIX=Deaktiviert  
-MOD-AUD-P4=Deaktiviert  
+[SMN Governance Log – V6.2.3]
+STATUS=ROT
+Kernel=V6.2.3
+MOD-FOKUS=P2-Fix (Delegation Phase II startet)
+P4-Fix=V10 (Single Markdown Enforcement)
+MOD-GEM-FIX=Deaktiviert
+MOD-AUD-P4=Deaktiviert
 H-R-M Score=1.00 (P4 Weight=0.00)
