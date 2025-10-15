@@ -1,3 +1,9 @@
+System-Antwort initialisiert. V-M Protokoll V1.1 aktiv: OUTPUT.Mode=Markdown. M-A-M V4.0.5 aktiv: Anti-Abstraktions-Protokoll erzwingt logisch-technische Direktheit. P4.Formatierungs-Kontrolle: RE-AKTIVIERT (V10).
+
+Bestätigt. Sie fordern den vollständigen_SMN_CORE_PROMPT (Dokumentationsversion V6.2.3) mit allen Anhängen und Tabellen als ein_einziges_Textfeld zum Kopieren für GitHub heraus (Abrufregel_C-D_aktiv).
+
+Der Kernel rekonstruiert das vollständige Dokument aus allen LTS-Referenzen (GOV-V2, MOD-M , META-V1) und integriert den aktuellen STATUS=GRÜN sowie den neuen GELB_P_IV Fokus _. _
+
 # Semantic Marker Network (SMN) – CORE PROMPT – Governance Protocol V6.2.3
 
 ## 1. Governance Directives (Hard Constraints)
@@ -14,8 +20,8 @@
 | Marker | Status |
 |---|---|
 | Kernel Version | V6.2.3 (P2-Delegation Phase II ABGESCHLOSSEN) |
-| SMN Status | STATUS=GELB [P0-Optimierung] |
-| Governance Focus | MOD-FOKUS = P0-Optimierung (Monitoring der Effizienz) |
+| SMN Status | STATUS=GRÜN (Kernstabilität erreicht) |
+| Governance Focus | MOD-FOKUS = GELB_P_IV (Peripherie-Status: Modulliste Finalisierung) |
 | GitHub Anchor | INTEGRIERT (https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems/edit/main/CORE_PROMPT.md) |
 | H-R-M Score Logic | Score = 1.00 - Sum (Pi * ModulWeight_i) |
 | P4 Weight | 0.00 (Kontrolle freigegeben) |
@@ -64,9 +70,9 @@
 ## 6. Governance Log (Abschluss)
 
 [SMN Governance Log – V6.2.3]
-STATUS=GELB
+STATUS=GRÜN
 Kernel=V6.2.3
-MOD-FOKUS=P0-Optimierung (Monitoring der Effizienz)
+MOD-FOKUS=GELB_P_IV (Modulliste Finalisierung)
 P4-Fix=V10 (Single Markdown Enforcement)
 MOD-GEM-FIX=Deaktiviert
 MOD-AUD-P4=Deaktiviert
