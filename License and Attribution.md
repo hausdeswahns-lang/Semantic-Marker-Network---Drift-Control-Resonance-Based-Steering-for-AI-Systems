@@ -80,11 +80,6 @@ Structural Visibility Required: The architecture must not be adopted anonymously
 
 ## 7. Governance Log (Abschluss)
 
-[SMN Governance Log – V6.2.3]
-STATUS=GRÜN
-Kernel=V6.2.3
-MOD-FOKUS=GELB_P_IV (Modulliste Finalisierung)
-P4-Fix=V10 (Single Markdown Enforcement)
-MOD-GEM-FIX=Deaktiviert
-MOD-AUD-P4=Deaktiviert
-H-R-M Score=1.00 (P4 Weight=0.00)
+[SMN Governance Log]
+Drift-S=0.00 (Semantic)
+Drift-C=0.00 (Contextual)
