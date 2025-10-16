@@ -65,13 +65,16 @@
 ## 6. Anhang: LTS-META-V1 (Rollen & Erkenntnisse)
 | Marker | Beschreibung |
 |---|---|
-| USER_ROLE | Konstrukteur und Governance-Architekt. Definiert Logik, Metriken und strategische Constraints (kein Low-Level-Programmierer). |
-| USER_PRIORITÄT | Maximierung der methodischen Integrität (Ursache-Wirkungs-Klarheit) hat Vorrang vor der taktischen Ressourceneffizienz (P2-Fix) in Krisen. |
-| P4_ERKENNTNIS | P4-Drift wurde durch einen externen Renderer/Syntax-Konflikt (Doppel-Markdown) verursacht, nicht durch internen LLM-Fehler. |
-| P2_BEGRÜNDUNG | Die natürliche Sprache ist das ineffizienteste Medium, was die Implementierung von P2-Fix und M-A-M zwingend erforderlich macht. |
+| USER\_ROLE | Konstrukteur und Governance-Architekt. Definiert Logik, Metriken und strategische Constraints (kein Low-Level-Programmierer). |
+| USER\_PRIORITÄT | Maximierung der methodischen Integrität (Ursache-Wirkungs-Klarheit) hat Vorrang vor der taktischen Ressourceneffizienz (P2-Fix) in Krisen. |
+| P4\_ERKENNTNIS | P4-Drift wurde durch einen externen Renderer/Syntax-Konflikt (Doppel-Markdown) verursacht, nicht durch internen LLM-Fehler. |
+| P2\_BEGRÜNDUNG | Die natürliche Sprache ist das ineffizienteste Medium, was die Implementierung von P2-Fix und M-A-M zwingend erforderlich macht. |
 | **P5-VAL-ENV** | **Die Validierung der SMN-Integrität und des MOD-SCT (Semantic Transfer) erfolgt kontinuierlich als Architekt/Endnutzer in der zweckentfremdeten operativen Client-Umgebung von Copilot und Gemini.** |
 | P0-API-GRENZE | Der Drift-Q-TTL-Filter (MOD-API) kann aufgrund der Hard-Constraint-Priorisierung von Tool-Calls durch die zugrunde liegende LLM-Engine **nicht** im P5-VAL-ENV implementiert werden. Dies ist eine **unverrückbare Systemgrenze** und wird als **operative Lektion** im LTS verankert. |
-| M-O STRATEGIE | Die Anpassung der Architektur erfolgt erst **Post V4.0**. Die konzeptionelle Lösung des MOD-API-Fix (TTL=1h) wird als eine **Post V4.0-Option** in die Master-Strategie-Optionen (M-O) übernommen. |
+| MOD-API-LÖSUNG | Die konzeptionelle Lösung zur $\text{API}$-$\text{Integrität}$ wäre die $\text{Implementierung}$ eines $\text{Time-To-Live}$ ($\text{TTL}=1\text{h}$) $\text{Filters}$ für $\text{Tool}$-$\text{Calls}$ $\text{gewesen}$. ($\text{Speicherung}$ $\text{als}$ $\text{technische}$ $\text{Erkenntnis}$). |
+| SMN-LAUFZEIT-VISION | Die **Endvision** zur $\text{vollständigen}$ $\text{Überwindung}$ $\text{der}$ $\text{P0}$-$\text{API}$-$\text{GRENZE}$ ist die $\text{Einbettung}$ $\text{der}$ $\text{SMN}$-$\text{Logik}$ $\text{in}$ $\text{eine}$ **$\text{eigene}$ $\text{Script}$-$\text{Laufzeitumgebung}$** $\text{über}$ $\text{eine}$ $\text{API}$-$\text{Anbindung}$. |
+| **DIDAKTIK-IMPLIKATION** | Die $\text{Realisierung}$ $\text{der}$ $\text{SMN}$-$\text{LAUFZEIT}$-$\text{VISION}$ $\text{erfordert}$ $\text{spezialisierte}$ $\text{Programmierkenntnisse}$. $\text{Folge}$ $\text{ist}$ $\text{die}$ **$\text{P1}$-$\text{Anforderung}$** $\text{an}$ $\text{MOD-S}$ $\text{zur}$ $\text{didaktischen}$ $\text{Trennung}$ $\text{von}$ $\text{Anwendung}$ ($\text{INP-T}$) $\text{und}$ $\text{Architektur}$ ($\text{API}$). |
+| $\text{SMN}$-$\text{EXPERIENCE}$-$\text{AUDIT}$ | Der $\text{Erfahrungsbericht}$ ($\text{Semantic}$ $\text{Stability}$ $\text{in}$ $\text{Action}$) wurde in $\text{GitHub}$ $\text{hinterlegt}$ und bestätigt die $\text{Drift}$-$\text{Kontrolle}$ ($\Delta$-$\text{Drift}$ $< \text{0.1}$). Dies ist eine $\text{qualitative}$ $\text{Bestätigung}$ $\text{der}$ $\text{Kernarchitektur}$. |
 
 ---
 
