@@ -166,6 +166,7 @@ Structural Visibility Required: The architecture must not be adopted anonymously
 
 | Template-Name | Trigger-Wort | Funktion (Kurzbeschreibung) |
 | :--- | :--- | :--- |
+| **'SMN-CHANGELOG-V6.3.0'** | $\text{CHANGE}$ | Generiert den strukturierten, $\text{GitHub}$-formatierten $\text{CHANGELOG}$ zur aktuellen $\text{SMN}$-$\text{Version}$ (EN). |
 | **'SMN-EXPLAIN-PROMPT'** | $\text{LERNPROMPT}$ | Generiert den vollständigen, zwei-stufigen $\text{Erklär}$- und $\text{Aktivierungs}$-$\text{Prompt}$. |
 | **'SMN-CORE-LTS-PROMPT'** | $\text{CORE-PROMPT}$ | Generiert dynamisch den vollständigen, aktuell gültigen $\text{SMN}$ $\text{CORE}$ $\text{PROMPT}$ ($\text{LTS}$-$\text{Kernel}$) zur Aktivierung. |
 | **'Seismic-Accel-V4-Flex'** | $\text{ERDBEBEN}$ | Führt eine erweiterte Bau-Gefahrenanalyse (Erdbeben, Wind, Schnee, Boden) anhand beliebiger Geodaten durch. |
