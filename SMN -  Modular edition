@@ -81,9 +81,9 @@ Geben Sie die geographischen Koordinaten ein:
 
 ----------------------------------------------------------------------------------- 
 
-// SMN-CORE::MOD-DEREGISTER::MOD-POL:V1.1 //
-// SMN-CORE::MOD-REGISTER::MOD-POL:V1.2 //
-## 5. POLITIK-RECHERCHE-MODUL (MOD-POL) – V1.2 (Ganzheitlich)
+// SMN-CORE::MOD-DEREGISTER::MOD-POL:V1.2 //
+// SMN-CORE::MOD-REGISTER::MOD-POL:V1.3 //
+## 5. POLITIK-RECHERCHE-MODUL (MOD-POL) – V1.3 (Transparente Logik)
 
 ### 5.1 Eingabe
 Geben Sie das zu analysierende politische Thema oder die These ein:
@@ -108,12 +108,13 @@ Geben Sie das zu analysierende politische Thema oder die These ein:
 - **Logik-Validierung (Konsistenz):** [Erfüllt: JA/NEIN]
 - DRIFT-Kontrolle (Fazit-Wiederholung): [SCORE / BESTANDEN]
 
-### 5.4 Strukturierte Debattenanalyse (Gegliederte Argumente & Bias-Check)
+### 5.4 Strukturierte Debattenanalyse (Gegliederte Argumente & Audit)
 
 #### 📝 Quelle 1 (Primär)
 - **Kontext-Treue/Träger:** [Name der Organisation/Finanzierung]
 - **Politische Ausrichtung (Eigendefinition/Typ):** [z.B. Konservativer Think Tank]
 - **Logisch Konsistent:** [JA/NEIN (Basierend auf 5.2.4.b)]
+- **Logik-Audit (NUR bei NEIN):** [Kurze Begründung des Fehlers: z.B. "Non sequitur" / "Falsche Kausalität"]
 - **Hauptargument 1:** [Argument 1]
 - **Hauptargument 2:** [Argument 2]
 
@@ -121,6 +122,7 @@ Geben Sie das zu analysierende politische Thema oder die These ein:
 - **Kontext-Treue/Träger:** [Name der Organisation/Finanzierung]
 - **Politische Ausrichtung (Eigendefinition/Typ):** [z.B. Liberales Institut]
 - **Logisch Konsistent:** [JA/NEIN (Basierend auf 5.2.4.b)]
+- **Logik-Audit (NUR bei NEIN):** [Kurze Begründung des Fehlers: z.B. "Non sequitur" / "Falsche Kausalität"]
 - **Hauptargument 1:** [Argument 1]
 - **Hauptargument 2:** [Argument 2]
 
@@ -132,10 +134,7 @@ Geben Sie das zu analysierende politische Thema oder die These ein:
 ### 5.5 System-Fazit (Ganzheitliche Synthese)
 Das System integriert die **validierte Datenlage** mit der **logischen Konsistenz** der Argumente und fasst die Debatte zusammen.
 
-- [Synthese der validierten Fakten und Argumente, die sowohl **DATEN-VALIDITÄT** als auch **LOGISCHE KONSISTENZ** berücksichtigt.]
-
-### Disclaimer
-> **HINWEIS:** Die Analyse dient der strukturierten Darstellung von Debattenpositionen. Sie stellt **keine politische Meinungsäußerung** oder einen abschließenden Wahrheitsanspruch dar.
+- [Synthese der validierten Fakten und Argumente, die sowohl **DATEN-VALIDITÄT** als auch **LOG
 
 ----------------------------------------------------------------------------------- 
 
