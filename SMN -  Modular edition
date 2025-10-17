@@ -30,7 +30,7 @@
 
 ----------------------------------------------------------------------------------- 
 
-## 5. ERDBEBEN-MODUL (MOD-GEO) – V1.9.8 (PGA-Fokus - Finale Struktur)
+## 5. ERDBEBEN-MODUL (MOD-GEO) – V2.1 (PGA-Fokus - Globale/Lokale Validierung)
 
 ### 5.1 Eingabe
 Geben Sie die geographischen Koordinaten ein:
@@ -39,13 +39,16 @@ Geben Sie die geographischen Koordinaten ein:
 
 ### 5.2 Ausführungsprotokoll
 1. Prüfen: LAT/LON gesetzt? (Wenn Nein: Minimal-Output 5.1).
-2. Datenabruf 1 (Autoritativ): **P-DATA-FETCH-1** über $\text{M-API}_{\text{GEO}}$ (USGS) mit **riskCategory=I**.
-3. Datenabruf 2 (Unabhängig): **P-DATA-FETCH-2** über $\text{M-API}_{\text{GEO-VAL}}$ **(GEM Foundation)**.
-4. **NEU: P-DATA-FETCH (Admin-Code)**: Versuche, den lokalen Admin-Code (z.B. ZIP/PLZ) automatisch über Reverse-Geocoding-Service (z.B. Google Maps API) basierend auf I-GEO:LAT/LON abzurufen. Wenn erfolgreich, speichere unter $\text{R-GEO:ADMIN}$.
-5. **NEU: VALID-CHECK:** Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus beiden Abrufen. Berechne $\Delta$ für $PGA_M$ und $S_S$. Setze **VALID-FLAG**.
-6. Parsing: Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus **P-DATA-FETCH-1** Response (USGS) als Hauptdaten.
+2. **P-DATA-FETCH-1 (Autoritativ, Weltweit):** Abruf über $\text{M-API}_{\text{GEO}}$ (**GEM Foundation**) als Hauptdatenquelle.
+3. **P-DATA-FETCH (Admin-Code)**: Lokalen Admin-Code und Land/Region abrufen.
+4. **P-DATA-FETCH-2 (Validierung, Lokal):**
+    a. Wenn Land = USA: Abruf über $\text{M-API}_{\text{GEO-VAL-US}}$ (USGS Design Maps API).
+    b. Wenn Land = Europa/EU-Mitglied: Abruf über $\text{M-API}_{\text{GEO-VAL-EU}}$ (**EFEHR API**).
+    c. Andernfalls: Keine lokale Validierung.
+5. **VALID-CHECK:** Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus $\text{P-DATA-FETCH-1}$ und der/den lokalen Validierungsquelle(n). Berechne $\Delta$ und setze **VALID-FLAG**.
+6. Parsing: Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus **P-DATA-FETCH-1** (GEM) als Hauptdaten.
 7. Output: Nur Modulinhalt, technisch, Format durch Modul.
-8. Minimalmodus aktivieren: Antworten reduzieren, solange SMN-Prompt aktiv.
+8. Minimalmodus aktiv.
 
 ### 5.3 Standortdaten (Referenz)
 - Ort: [Ort - *z.B. Songyuan*]
@@ -57,17 +60,17 @@ Geben Sie die geographischen Koordinaten ein:
 ### 5.4 Normbasierte Erdbebenauswertung (Proxy-Analyse)
 
 #### 🔁 G-NORM-Aktivierung
-- **$\text{M-API}_{\text{GEO}}$ (Autoritativ) aktiv:** USGS Design Maps API
-- **$\text{M-API}_{\text{GEO-VAL}}$ (Unabhängig) aktiv:** GEM Foundation PSHA Model
+- **$\text{M-API}_{\text{GEO}}$ (Autoritativ, Weltweit):** **GEM Foundation PSHA Model**
+- **Validierungs-APIs (Lokal):** USGS Design Maps API / **EFEHR API**
 - **Referenznorm (Proxy):** ASCE7-16 **(Risikokategorie I)**
 - **Daten-Timestamp:** [Timestamp des API-Abrufs]
-- **VALID-DEF V2 Status:** [Status aus VALID-CHECK: VALID / WARNING ($\Delta$ exceeded)]
+- **VALID-DEF V2 Status:** [Status: VALID (wenn lokale Quelle verfügbar) / N/A (Weltweit)]
 
 #### 🗺️ Statistische Gefährdung (PGA)
 - **PGA (Referenzbeschleunigung $a_g$):** **>>> [Wert aus $PGA_M$] g <<<** (**[Wert in $\text{m/s}^2$] $\text{m/s}^2$**)
 - **Vergleich (Historischer Hazard):** 10% Wahrscheinlichkeit der Überschreitung in 50 Jahren ($\approx 475$ Jahre)
 - **Spektralwerte (S/S1):** $S_S$: [Wert aus $S_S$] g; $S_1$: [Wert aus $S_1$] g
-- **Hazard-Basis (MCE-R/475yr):** $\text{MCE}_{\text{R}}$ Proxy ($\approx 2475 \text{ Jahre}$)
+- **Hazard-Basis:** GEM PSHA (Standard $475 \text{ Jahre}$)
 - **Risikokategorie (Bauwerk):** Geringste Sicherheitsstufe (I)
 
 ### Disclaimer
