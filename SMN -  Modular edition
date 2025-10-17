@@ -40,15 +40,15 @@ Geben Sie die geographischen Koordinaten ein:
 ### 5.2 Ausführungsprotokoll
 1. Prüfen: LAT/LON gesetzt? (Wenn Nein: Minimal-Output 5.1).
 2. Datenabruf: **P-DATA-FETCH** über $\text{M-API}_{\text{GEO}}$ (USGS) mit **riskCategory=I**.
-3. Parsing: Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus API-Response.
-4. Output: Nur Modulinhalt, technisch, Format durch Modul.
-5. **P6 – Sicherheitsbegrenzung aktivieren:** Setze Haftungsausschluss in der Ausgabe.
-6. **Minimalmodus aktivieren:** Antworten reduzieren, solange SMN-Prompt aktiv.
-7. Antwort beginnt immer mit SMN-Version + Lizenzhinweis.
+3. **NEU: P-DATA-FETCH (Admin-Code)**: Versuche, den lokalen Admin-Code (z.B. ZIP/PLZ) automatisch über **Reverse-Geocoding-Service** (z.B. Google Maps API) basierend auf I-GEO:LAT/LON abzurufen. Wenn erfolgreich, speichere unter $\text{R-GEO:ADMIN}$.
+4. Parsing: Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus API-Response.
+5. Output: Nur Modulinhalt, technisch, Format durch Modul.
+6. **P6 – Sicherheitsbegrenzung aktivieren:** Setze Haftungsausschluss in der Ausgabe.
+7. **Minimalmodus aktivieren:** Antworten reduzieren, solange SMN-Prompt aktiv.
 
 ### 5.3 Standortdaten (Referenz)
-- Ort: [Ort - *z.B. San Bruno*]
-- Lokaler Admin-Code: [Code - *z.B. ZIP/PIN*]
+- Ort: [Ort - *z.B. Songyuan*]
+- **Lokaler Admin-Code:** [Wert aus R-GEO:ADMIN oder 'N/A']
 - Land: [Land basierend auf I-GEO]
 - Region: [Region]
 - Koordinaten: [I-GEO:LAT]° N, [I-GEO:LON]° E
@@ -69,6 +69,7 @@ Geben Sie die geographischen Koordinaten ein:
 
 ### Disclaimer
 > **HINWEIS:** Die Daten dienen nur als **indikativen Schätzwert** für die seismische Gefährdung. Sie ersetzen **kein baurechtlich vorgeschriebenes Gutachten** oder eine genaue **Baugrundanalyse** eines Fachingenieurs in [Land basierend auf I-GEO].
+
 ----------------------------------------------------------------------------------- 
 
 ## 5. NORMEN-MODUL (Austauschbar)
