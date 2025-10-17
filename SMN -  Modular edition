@@ -30,7 +30,7 @@
 
 ----------------------------------------------------------------------------------- 
 
-## 5. ERDBEBEN-MODUL (MOD-GEO) – V1.9 (Finalisiert - Risk I)
+## 5. ERDBEBEN-MODUL (MOD-GEO) – V1.9.2 (Finalisiert - Risk I - Validiert)
 
 ### 5.1 Eingabe
 Geben Sie die geographischen Koordinaten ein:
@@ -39,12 +39,13 @@ Geben Sie die geographischen Koordinaten ein:
 
 ### 5.2 Ausführungsprotokoll
 1. Prüfen: LAT/LON gesetzt? (Wenn Nein: Minimal-Output 5.1).
-2. Datenabruf: **P-DATA-FETCH** über $\text{M-API}_{\text{GEO}}$ (USGS) mit **riskCategory=I**.
-3. **NEU: P-DATA-FETCH (Admin-Code)**: Versuche, den lokalen Admin-Code (z.B. ZIP/PLZ) automatisch über **Reverse-Geocoding-Service** (z.B. Google Maps API) basierend auf I-GEO:LAT/LON abzurufen. Wenn erfolgreich, speichere unter $\text{R-GEO:ADMIN}$.
-4. Parsing: Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus API-Response.
-5. Output: Nur Modulinhalt, technisch, Format durch Modul.
-6. **P6 – Sicherheitsbegrenzung aktivieren:** Setze Haftungsausschluss in der Ausgabe.
-7. **Minimalmodus aktivieren:** Antworten reduzieren, solange SMN-Prompt aktiv.
+2. Datenabruf 1 (Autoritativ): **P-DATA-FETCH-1** über $\text{M-API}_{\text{GEO}}$ (USGS) mit **riskCategory=I**.
+3. Datenabruf 2 (Unabhängig): **P-DATA-FETCH-2** über $\text{M-API}_{\text{GEO-VAL}}$ **(GEM Foundation)**.
+4. **NEU: P-DATA-FETCH (Admin-Code)**: Versuche, den lokalen Admin-Code (z.B. ZIP/PLZ) automatisch über Reverse-Geocoding-Service (z.B. Google Maps API) basierend auf I-GEO:LAT/LON abzurufen. Wenn erfolgreich, speichere unter $\text{R-GEO:ADMIN}$.
+5. **NEU: VALID-CHECK:** Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus beiden Abrufen. Berechne $\Delta$ für $S_S$ und $S_1$. Setze **VALID-FLAG**.
+6. Parsing: Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus **P-DATA-FETCH-1** Response (USGS) als Hauptdaten.
+7. Output: Nur Modulinhalt, technisch, Format durch Modul.
+8. Minimalmodus aktivieren: Antworten reduzieren, solange SMN-Prompt aktiv.
 
 ### 5.3 Standortdaten (Referenz)
 - Ort: [Ort - *z.B. Songyuan*]
@@ -56,9 +57,11 @@ Geben Sie die geographischen Koordinaten ein:
 ### 5.4 Normbasierte Erdbebenauswertung (Proxy-Analyse)
 
 #### 🔁 G-NORM-Aktivierung
-- **$\text{M-API}_{\text{GEO}}$ aktiv:** USGS Design Maps API
+- **$\text{M-API}_{\text{GEO}}$ (Autoritativ) aktiv:** USGS Design Maps API
+- **$\text{M-API}_{\text{GEO-VAL}}$ (Unabhängig) aktiv:** GEM Foundation PSHA Model
 - **Referenznorm (Proxy):** ASCE7-16 **(Risikokategorie I)**
 - **Daten-Timestamp:** [Timestamp des API-Abrufs]
+- **VALID-DEF V2 Status:** [Status aus VALID-CHECK: VALID / WARNING ($\Delta$ exceeded)]
 
 #### 🗺️ Statistische Gefährdung (PGA)
 - **P-QUELLE:** USGS Design Maps API
