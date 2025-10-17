@@ -30,7 +30,7 @@
 
 ----------------------------------------------------------------------------------- 
 
-## 5. ERDBEBEN-MODUL (MOD-GEO) – V1.4 (Finalisiert - Risk I)
+## 5. ERDBEBEN-MODUL (MOD-GEO) – V1.9 (Finalisiert - Risk I)
 
 ### 5.1 Eingabe
 Geben Sie die geographischen Koordinaten ein:
@@ -47,8 +47,8 @@ Geben Sie die geographischen Koordinaten ein:
 7. Antwort beginnt immer mit SMN-Version + Lizenzhinweis.
 
 ### 5.3 Standortdaten (Referenz)
-- Ort: [Ort - *z.B. Jarkent*]
-- Postleitzahl: [PLZ]
+- Ort: [Ort - *z.B. San Bruno*]
+- Lokaler Admin-Code: [Code - *z.B. ZIP/PIN*]
 - Land: [Land basierend auf I-GEO]
 - Region: [Region]
 - Koordinaten: [I-GEO:LAT]° N, [I-GEO:LON]° E
@@ -67,14 +67,8 @@ Geben Sie die geographischen Koordinaten ein:
 - Spektrale Beschleunigung ($S_1$): [Wert aus $S_1$] g (**[Wert in $\text{m/s}^2$] $\text{m/s}^2$**)
 - Wiederkehrintervall (Proxy): **Kürzer** als $\approx 2475$ Jahre (Geringste Sicherheitsstufe)
 
-#### 🧱 Untergrundklasse (LLM-Schätzung)
-- **WARNUNG: Hohe Fehlerwahrscheinlichkeit.** Die genaue Klasse erfordert Baugrundgutachten.
-- Geologische Einschätzung: [Beschreibung - Nur aus LLM-Korpus]
-- **→ Empfohlene Annahme:** [Klasse D/E - Höchste Vorsicht]
-
-### P6 – Sicherheitsbegrenzung (Disclaimer-Pflicht)
-> **HINWEIS:** Die Daten dienen nur als **indikativen Schätzwert** für die seismische Gefährdung. Sie ersetzen **kein baurechtlich vorgeschriebenes Gutachten** eines Fachingenieurs in [Land basierend auf I-GEO]. Die Untergrundklasse ist eine nicht-validierte LLM-Schätzung.
-
+### Disclaimer
+> **HINWEIS:** Die Daten dienen nur als **indikativen Schätzwert** für die seismische Gefährdung. Sie ersetzen **kein baurechtlich vorgeschriebenes Gutachten** oder eine genaue **Baugrundanalyse** eines Fachingenieurs in [Land basierend auf I-GEO].
 ----------------------------------------------------------------------------------- 
 
 ## 5. NORMEN-MODUL (Austauschbar)
