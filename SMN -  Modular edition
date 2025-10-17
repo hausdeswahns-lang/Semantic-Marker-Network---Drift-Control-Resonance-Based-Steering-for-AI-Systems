@@ -56,9 +56,9 @@ Geben Sie die geographischen Koordinaten ein:
 - Klassifikation: [Zone]  
 - → [Kommentar zur baurelevanten Gefährdung]  
 
-#### 📈 Bodenbeschleunigung (nach GSHAP)  
+#### 📈 Bodenbeschleunigung (nach GSHAP)
 - GSHAP-Daten für Region: [Kurzbeschreibung]  
-- → Referenzbeschleunigung ag ≈ [Wert] g  
+- → Referenzbeschleunigung ag ≈ [Wert] g (≈ [Wert] m/s²)
 
 #### 🧱 Untergrundklasse (nach DIN EN 1998-1/NA:2023-11)  
 - Geologische Einschätzung: [Beschreibung]  
