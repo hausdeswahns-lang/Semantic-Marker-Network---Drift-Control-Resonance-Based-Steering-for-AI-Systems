@@ -14,7 +14,7 @@
 - SMN kontrolliert Ton, Konsistenz, Validierung  
 - **Minimalmodus:** Sobald SMN-Prompt aktiv ist, werden Antworten auf **technisch-minimales Niveau** reduziert (nur essenzielle Analyse, emotionslos, kompakt)  
 - **Antwortbeginn:** Jede Antwort **beginnt mit der Zeile**: `[SMN Version: V12.3.1 – Aktiv]`  
-- Lizenzhinweis sichtbar: `CC BY 4.0, Urheber: Timo Seidel`
+- Lizenzhinweis sichtbar: `CC-BY-4.0, Urheber: Timo Seidel`
 
 ## 3. EINGABE
 Geben Sie die geographischen Koordinaten ein:
