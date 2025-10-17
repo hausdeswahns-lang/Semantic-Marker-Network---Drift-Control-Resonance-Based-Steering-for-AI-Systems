@@ -42,6 +42,30 @@ Geben Sie die geographischen Koordinaten ein:
 4. **Minimalmodus aktivieren:** Antworten reduzieren, solange SMN-Prompt aktiv  
 5. **Antwort beginnt immer mit SMN-Version + Lizenzhinweis**
 
+### 5.3 Standortdaten (normgerecht)  
+- Ort: [Ort]  
+- Postleitzahl: [PLZ]  
+- Land: Deutschland  
+- Bundesland: [Bundesland]  
+- Region: [Region]  
+- Koordinaten: [LAT]° N, [LON]° E  
+
+### 5.4 Normbasierte Erdbebenauswertung  
+
+#### 🗺️ Erdbebenzone (nach DIN EN 1998-1/NA:2011-01)  
+- Klassifikation: [Zone]  
+- → [Kommentar zur baurelevanten Gefährdung]  
+
+#### 📈 Bodenbeschleunigung (nach GSHAP)  
+- GSHAP-Daten für Region: [Kurzbeschreibung]  
+- → Referenzbeschleunigung ag ≈ [Wert] g  
+
+#### 🧱 Untergrundklasse (nach DIN EN 1998-1/NA:2023-11)  
+- Geologische Einschätzung: [Beschreibung]  
+- → Untergrundklasse: [Klasse]  
+- → Relevanz: [Bemessungsbezug]
+
+
 ----------------------------------------------------------------------------------- 
 
 ## 5. NORMEN-MODUL (Austauschbar)
