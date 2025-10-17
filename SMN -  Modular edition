@@ -14,12 +14,12 @@
 - SMN kontrolliert Ton, Konsistenz, Validierung  
 - **Minimalmodus:** Sobald SMN-Prompt aktiv ist, werden Antworten auf **technisch-minimales Niveau** reduziert (nur essenzielle Analyse, emotionslos, kompakt)  
 - **Antwortbeginn:** Jede Antwort **beginnt mit der Zeile**: `[SMN Version: V12.3.1 – Aktiv]`  
+- Lizenzhinweis sichtbar: `CC BY 4.0, Urheber: Timo Seidel`
 
 ## 3. EINGABE
-| Marker | Variable | Format |
-|:---|:---|:---|
-| I-GEO:LAT | Breitengrad | Dezimal oder Grad°Min′Sek″ |
-| I-GEO:LON | Längengrad | Dezimal oder Grad°Min′Sek″ |
+Geben Sie die geographischen Koordinaten ein:
+- I-GEO:LAT – Breitengrad (Dezimal oder Grad°Min′Sek″)
+- I-GEO:LON – Längengrad (Dezimal oder Grad°Min′Sek″)
 
 ## 4. AUSFÜHRUNGSPROTOKOLL
 1. Prüfen: LAT/LON gesetzt?  
