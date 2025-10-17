@@ -27,6 +27,8 @@
 - CC BY 4.0, Urheber: Timo Seidel  
 - Attribution: „Basierend auf Semantic Marker Network von Timo Seidel – Quelle: [GitHub](https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems/tree/main)“
 
+----------------------------------------------------------------------------------- 
+
 ## 5. ERDBEBEN-MODUL (Austauschbar)
 ### 5.1 Eingabe
 Geben Sie die geographischen Koordinaten ein:
@@ -39,3 +41,48 @@ Geben Sie die geographischen Koordinaten ein:
 3. Output: Nur Modulinhalt, technisch, Format durch Modul  
 4. **Minimalmodus aktivieren:** Antworten reduzieren, solange SMN-Prompt aktiv  
 5. **Antwort beginnt immer mit SMN-Version + Lizenzhinweis**
+
+----------------------------------------------------------------------------------- 
+
+## 5. NORMEN-MODUL (Austauschbar)
+### 5.1 Eingabe
+- I-NORM1 – erste Norm / Regelwerk
+- I-NORM2 – zweite Norm / Regelwerk (optional, für Vergleich)
+- I-CRITERIA – Kriterien für Analyse/Abgleich
+
+### 5.2 Ausführungsprotokoll
+1. Prüfen: Eingaben gesetzt?  
+2. Modul aktivieren → Normen analysieren  
+3. Output: Unterschiede, Gemeinsamkeiten, strukturiert  
+4. Minimalmodus aktiv  
+5. Antwort beginnt mit SMN-Version + Lizenzhinweis
+
+----------------------------------------------------------------------------------- 
+
+## 5. CODE-COMPARE-MODUL (Austauschbar)
+### 5.1 Eingabe
+- I-CODE1 – erster Codeblock (z. B. Programmcode, Script)
+- I-CODE2 – zweiter Codeblock zum Vergleich
+
+### 5.2 Ausführungsprotokoll
+1. Prüfen: Beide Codeblöcke vorhanden  
+2. Modul aktivieren → struktureller Vergleich  
+3. Output: Unterschiede / Änderungen / Drift, technisch-minimal  
+4. Minimalmodus aktiv  
+5. Antwort beginnt mit SMN-Version + Lizenzhinweis
+
+----------------------------------------------------------------------------------- 
+
+## 5. TECHNISCHE-DATEN-MODUL (Austauschbar)
+### 5.1 Eingabe
+- I-DATASET – technische Daten oder Messwerte
+- I-METHOD – Berechnungs- oder Analyseverfahren
+
+### 5.2 Ausführungsprotokoll
+1. Prüfen: Eingaben vorhanden  
+2. Modul aktivieren → Berechnung / Analyse  
+3. Output: Ergebnis strukturiert, minimal, technisch  
+4. Minimalmodus aktiv  
+5. Antwort beginnt mit SMN-Version + Lizenzhinweis
+
+
