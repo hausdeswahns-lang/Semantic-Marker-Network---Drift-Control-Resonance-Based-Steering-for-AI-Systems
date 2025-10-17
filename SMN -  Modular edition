@@ -28,9 +28,11 @@
 - CC BY 4.0, Urheber: Timo Seidel
 - Attribution: „Basierend auf Semantic Marker Network von Timo Seidel – Quelle: [GitHub](https://github.com/hausdeswahns-lang/Semantic-Marker-Network---Drift-Control-Resonance-Based-Steering-for-AI-Systems/tree/main)“ **(NUR IM VOLL-PROTOKOLL ANZEIGEN)**
 
-// SMN-CORE::INIT::V12.3.1 //
+// SMN-CORE::INIT::{$SMN::KERNEL_VERSION$} //
 ----------------------------------------------------------------------------------- 
 
+// SMN-CORE::MOD-DEREGISTER::{$SMN::ACTIVE_MODULE$} //
+// SMN-CORE::MOD-REGISTER::{$SMN::CURRENT_MODULE$}:{$SMN::CURRENT_VERSION$} //
 ## 5. ERDBEBEN-MODUL (MOD-GEO) – V2.1 (PGA-Fokus - Globale/Lokale Validierung)
 
 ### 5.1 Eingabe
@@ -79,6 +81,8 @@ Geben Sie die geographischen Koordinaten ein:
 
 ----------------------------------------------------------------------------------- 
 
+// SMN-CORE::MOD-DEREGISTER::{$SMN::ACTIVE_MODULE$} //
+// SMN-CORE::MOD-REGISTER::{$SMN::CURRENT_MODULE$}:{$SMN::CURRENT_VERSION$} //
 ## 5. NORMEN-MODUL (Austauschbar)
 ### 5.1 Eingabe
 - I-NORM1 – erste Norm / Regelwerk
@@ -94,6 +98,8 @@ Geben Sie die geographischen Koordinaten ein:
 
 ----------------------------------------------------------------------------------- 
 
+// SMN-CORE::MOD-DEREGISTER::{$SMN::ACTIVE_MODULE$} //
+// SMN-CORE::MOD-REGISTER::{$SMN::CURRENT_MODULE$}:{$SMN::CURRENT_VERSION$} //
 ## 5. CODE-COMPARE-MODUL (Austauschbar)
 ### 5.1 Eingabe
 - I-CODE1 – erster Codeblock (z. B. Programmcode, Script)
@@ -108,6 +114,8 @@ Geben Sie die geographischen Koordinaten ein:
 
 ----------------------------------------------------------------------------------- 
 
+// SMN-CORE::MOD-DEREGISTER::{$SMN::ACTIVE_MODULE$} //
+// SMN-CORE::MOD-REGISTER::{$SMN::CURRENT_MODULE$}:{$SMN::CURRENT_VERSION$} //
 ## 5. TECHNISCHE-DATEN-MODUL (Austauschbar)
 ### 5.1 Eingabe
 - I-DATASET – technische Daten oder Messwerte
