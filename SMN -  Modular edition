@@ -81,9 +81,9 @@ Geben Sie die geographischen Koordinaten ein:
 
 ----------------------------------------------------------------------------------- 
 
-// SMN-CORE::MOD-DEREGISTER::MOD-POL:V1.2 //
-// SMN-CORE::MOD-REGISTER::MOD-POL:V1.3 //
-## 5. POLITIK-RECHERCHE-MODUL (MOD-POL) – V1.3 (Transparente Logik)
+// SMN-CORE::MOD-DEREGISTER::MOD-POL:V1.3 //
+// SMN-CORE::MOD-REGISTER::MOD-POL:V1.4 //
+## 5. POLITIK-RECHERCHE-MODUL (MOD-POL) – V1.4 (Fallbacksicherheit)
 
 ### 5.1 Eingabe
 Geben Sie das zu analysierende politische Thema oder die These ein:
@@ -92,13 +92,15 @@ Geben Sie das zu analysierende politische Thema oder die These ein:
 
 ### 5.2 Ausführungsprotokoll
 1. Prüfen: I-POL:THEMA gesetzt? (Wenn Nein: Minimal-Output 5.1).
-2. **P-DATA-FETCH (Konsolidiert):** Führe **EINE** Suche durch, um die **neueste** Primärquelle ($\le 90$ Tage) und zusätzlich eine Kontrast- und eine Datenquelle zu finden. Ziel: 3 Quellen in 1 Abruf.
-3. **Fokus-Check (Quellenzuordnung):** Klassifiziere die 3 gefundenen Top-Quellen als: (1) Primär, (2) Kontrast, (3) Daten/Neutral.
+2. **P-DATA-FETCH-A (Konsolidiert):** Führe **EINE** Suche durch, um die 3 Zielquellen (Primär, Kontrast, Daten) zu finden. **PRIORISIERUNG:** Wähle die neueste Quelle ($\le 90$ Tage).
+2.1. **FALLBACK (Audit):** Prüfe, ob alle 3 Quelltypen in Schritt 2 gefunden wurden.
+2.2. **FALLBACK (Gezielte Nachsuche):** Falls Quelltypen fehlen, führe **gezielt separate** Abrufe für die **fehlenden** Quelltypen (Kontrast, Daten) durch. *P0-Kompromiss zur Sicherung der Validierung.*
+3. **Fokus-Check (Quellenzuordnung):** Klassifiziere die gefundenen Quellen (max. 3) als: (1) Primär, (2) Kontrast, (3) Daten/Neutral.
 4. **VALID-DEF V3 (Ganzheitlich):**
     a. **Daten-Validierung:** Validiere **quantitative Datenpunkte** dreifach (Delta $\le 5\%$). Setze **VALID-FLAG-DATA**.
-    b. **Logik-Validierung:** Prüfe die **logische Konsistenz** der Hauptargumente in Q1 und Q2. Setze **VALID-FLAG-LOGIC** (Prüfe, ob Prämisse zu Schlussfolgerung passt, unabhängig vom normativen Inhalt).
+    b. **Logik-Validierung:** Prüfe die **logische Konsistenz** der Hauptargumente in Q1 und Q2. Setze **VALID-FLAG-LOGIC**.
     c. Die **Gesamtvalidierung** ($3 \times$) ist nur erfolgreich, wenn beide Flags gesetzt sind.
-5. **DRIFT-MARK V1 (Synthese-Kontrolle):** Überprüfe die letzten 5 Fazits (5.5) auf Wiederholung. Ändere die **Formulierung der abschließenden Synthese** signifikant, wenn eine Wiederholung des Kernfazits droht.
+5. **DRIFT-MARK V1 (Synthese-Kontrolle):** Überprüfe die letzten 5 Fazits (5.5) auf Wiederholung. Ändere die **Formulierung der abschließenden Synthese** signifikant.
 6. Output: Nur Modulinhalt, **analytisch**, Format durch Modul.
 7. Minimalmodus aktiv. (Stellt P0-Compliance sicher.)
 
@@ -106,6 +108,7 @@ Geben Sie das zu analysierende politische Thema oder die These ein:
 - Analysiertes Thema: [I-POL:THEMA]
 - **Daten-Validierung (Quantitativ):** [Erfüllt: JA/NEIN]
 - **Logik-Validierung (Konsistenz):** [Erfüllt: JA/NEIN]
+- **Quelle-Abrufstatus:** [Vollständig (3/3) / Teilweise (z.B. 2/3)]
 - DRIFT-Kontrolle (Fazit-Wiederholung): [SCORE / BESTANDEN]
 
 ### 5.4 Strukturierte Debattenanalyse (Gegliederte Argumente & Audit)
