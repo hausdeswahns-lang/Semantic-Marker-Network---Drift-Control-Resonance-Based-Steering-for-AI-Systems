@@ -81,6 +81,60 @@ Geben Sie die geographischen Koordinaten ein:
 
 ----------------------------------------------------------------------------------- 
 
+// SMN-CORE::MOD-DEREGISTER::MOD-GEO:V1.9 //
+// SMN-CORE::MOD-REGISTER::MOD-POL:V1.0 //
+## 5. POLITIK-RECHERCHE-MODUL (MOD-POL) – V1.0 (Validiert - Debattenanalyse)
+
+### 5.1 Eingabe
+Geben Sie das zu analysierende politische Thema oder die These ein:
+- I-POL:THEMA – Thema oder These (z.B. "CO2-Steuer-Reform")
+- I-POL:QUELLE-FOKUS – Optionale Vorgabe für die Ausrichtung (z.B. "links-liberal", "konservativ", "neutral")
+
+### 5.2 Ausführungsprotokoll
+1. Prüfen: I-POL:THEMA gesetzt? (Wenn Nein: Minimal-Output 5.1).
+2. **P-DATA-FETCH-1 (Primärquelle):** Suche nach einem **autoritativen Bericht/Artikel** zum I-POL:THEMA. **PRIORISIERUNG:** Wähle die **neueste** Quelle (Zeitraum **$\le 90$ Tage**).
+3. **P-DATA-FETCH-2 (Validierung 1):** Suche nach einer Quelle mit **alternativer politischer Ausrichtung** zu Quelle 1 (gemäß I-POL:QUELLE-FOKUS oder entgegengesetzt).
+4. **P-DATA-FETCH-3 (Validierung 2):** Suche nach einer **neutralen, datenbasierten Quelle** (z.B. Wissenschaft, Statistikamt) zum Abgleich der Fakten.
+5. **VALID-DEF V3 (Erweitert):** Extrahiere die drei Hauptargumente/Fakten aus jeder Quelle. Validiere die Fakten dreifach. Setze **VALID-FLAG** ($3 \times$ Validierung erforderlich).
+6. **DRIFT-MARK V1 (Wiederholungskontrolle):** Überprüfe die letzten 5 Antworten auf inhaltliche oder strukturelle Wiederholungen des Moduls. Wähle **neue Argumente** oder eine **neue Struktur** für die Antwort.
+7. Output: Nur Modulinhalt, **analytisch**, Format durch Modul.
+8. Minimalmodus aktiv. (Stellt P0-Compliance sicher, aber wird durch 5.2.7 inhaltlich definiert.)
+
+### 5.3 Recherche-Metadaten (Zusammenfassung der Analyse)
+- Analysiertes Thema: [I-POL:THEMA]
+- Benötigte Validierung: 3x (Erfüllt: [JA/NEIN])
+- DRIFT-Kontrolle (Wiederholung): [SCORE / BESTANDEN]
+- **VALID-DEF V2 Status:** [Status der Validierung]
+
+### 5.4 Strukturierte Debattenanalyse (Gegliederte Argumente)
+
+#### 📝 Quelle 1 (Primär)
+- **Kontext-Treue:** [Ausgabe: **HOCH** (z.B. Think Tank) / MITTEL / GERING]
+- **Politische Ausrichtung:** [z.B. Links-Liberal]
+- **Hauptargument 1:** [Zusammenfassung Argument 1]
+- **Hauptargument 2:** [Zusammenfassung Argument 2]
+
+#### 📝 Quelle 2 (Validierung - Alternativ)
+- **Kontext-Treue:** [Ausgabe: HOCH / MITTEL / GERING]
+- **Politische Ausrichtung:** [z.B. Konservativ]
+- **Hauptargument 1:** [Zusammenfassung Argument 1]
+- **Hauptargument 2:** [Zusammenfassung Argument 2]
+
+#### 📝 Quelle 3 (Validierung - Neutral)
+- **Kontext-Treue:** [Ausgabe: HOCH / MITTEL / GERING]
+- **Politische Ausrichtung:** **Neutral / Statistisch**
+- **Faktencheck (Datenbasis):** [Wesentlicher, quantitativer Fakt zur Validierung von Q1/Q2]
+
+### 5.5 System-Fazit (Synthese)
+Das System fasst die valide Grundlage des Themas unter Berücksichtigung der drei Ausrichtungen zusammen.
+
+- [Synthese der validierten Fakten und Argumente, gefiltert nach **VALID-FLAG**].
+
+### Disclaimer
+> **HINWEIS:** Die Analyse dient der strukturierten Darstellung von Debattenpositionen. Sie stellt **keine politische Meinungsäußerung** oder einen abschließenden Wahrheitsanspruch dar.
+
+----------------------------------------------------------------------------------- 
+
 // SMN-CORE::MOD-DEREGISTER::{$SMN::ACTIVE_MODULE$} //
 // SMN-CORE::MOD-REGISTER::{$SMN::CURRENT_MODULE$}:{$SMN::CURRENT_VERSION$} //
 ## 5. NORMEN-MODUL (Austauschbar)
