@@ -30,48 +30,49 @@
 
 ----------------------------------------------------------------------------------- 
 
-## 5. ERDBEBEN-MODUL (Austauschbar)
+## 5. ERDBEBEN-MODUL (MOD-GEO) – V1.2 (Finalisiert)
+
 ### 5.1 Eingabe
 Geben Sie die geographischen Koordinaten ein:
-- I-GEO:LAT – Breitengrad (Dezimal oder Grad°Min′Sek″)
-- I-GEO:LON – Längengrad (Dezimal oder Grad°Min′Sek″)
+- I-GEO:LAT – Breitengrad (Dezimal)
+- I-GEO:LON – Längengrad (Dezimal)
 
 ### 5.2 Ausführungsprotokoll
-1. Prüfen: LAT/LON gesetzt?  
-2. Berechnung: Modul aktivieren + 2× Validierung  
-3. Output: Nur Modulinhalt, technisch, Format durch Modul  
-4. **Minimalmodus aktivieren:** Antworten reduzieren, solange SMN-Prompt aktiv  
-5. **Antwort beginnt immer mit SMN-Version + Lizenzhinweis**
+1. Prüfen: LAT/LON gesetzt? (Wenn Nein: Minimal-Output 5.1).
+2. Datenabruf: **P-DATA-FETCH** über $\text{M-API}_{\text{GEO}}$ (USGS).
+3. Parsing: Extrahiere Metriken ($PGA_M$, $S_S$, $S_1$) aus API-Response.
+4. Output: Nur Modulinhalt, technisch, Format durch Modul.
+5. **P6 – Sicherheitsbegrenzung aktivieren:** Setze Haftungsausschluss in der Ausgabe.
+6. **Minimalmodus aktivieren:** Antworten reduzieren, solange SMN-Prompt aktiv.
+7. Antwort beginnt immer mit SMN-Version + Lizenzhinweis.
 
-### 5.3 Standortdaten (normgerecht)  
-- Ort: [Ort]  
-- Postleitzahl: [PLZ]  
-- Land: Deutschland  
-- Bundesland: [Bundesland]  
-- Region: [Region]  
-- Koordinaten: [LAT]° N, [LON]° E  
+### 5.3 Standortdaten (Referenz)
+- Ort: [Ort]
+- Postleitzahl: [PLZ]
+- Land: Deutschland
+- Bundesland: [Bundesland]
+- Region: [Region]
+- Koordinaten: [I-GEO:LAT]° N, [I-GEO:LON]° E
 
-### 5.4 Normbasierte Erdbebenauswertung  
+### 5.4 Normbasierte Erdbebenauswertung (Proxy-Analyse)
 
 #### 🔁 G-NORM-Aktivierung
-- Normwahl erfolgt automatisch anhand LAT/LON  
-- Aktivierte Norm: [z. B. DIN EN 1998-1/NA:2011-01]  
-- Quelle: G-NORM-Modul (geokoordinatenbasierte Regelwerkslogik)
+- **$\text{M-API}_{\text{GEO}}$ aktiv:** USGS Design Maps API
+- **Referenznorm (Proxy):** ASCE7-16 (Stellvertretend für GSHAP/statistische Last)
+- **Daten-Timestamp:** [Timestamp des API-Abrufs: 2025-10-17 17:52:39 CEST]
 
-#### 🗺️ Erdbebenzone (nach aktivierter Norm)
-- Klassifikation: [Zone]  
-- → Kommentar zur baurelevanten Gefährdung: [Text]  
+#### 🗺️ Statistische Gefährdung (PGA)
+- **P-QUELLE:** USGS Design Maps API
+- **Referenzbeschleunigung $a_g$ ($\approx PGA_{\text{M}}$):** [Wert aus $PGA_M$] g (≈ [Wert] m/s²)
+- **Wiederkehrintervall (Proxy):** $\approx 2475$ Jahre (2% Überschreitung in 50 Jahren)
 
-#### 📈 Bodenbeschleunigung (nach GSHAP)
-- GSHAP-Daten für Region: [Kurzbeschreibung]  
-- → Referenzbeschleunigung ag ≈ [Wert] g (≈ [Wert] m/s²)
+#### 🧱 Untergrundklasse (LLM-Schätzung)
+- **WARNUNG: Hohe Fehlerwahrscheinlichkeit.** Die genaue Klasse erfordert Baugrundgutachten.
+- Geologische Einschätzung: [Beschreibung - Nur aus LLM-Korpus]
+- **→ Empfohlene Annahme:** [Klasse D/E - Höchste Vorsicht]
 
-#### 🧱 Untergrundklasse (nach DIN EN 1998-1/NA:2023-11)  
-- Geologische Einschätzung: [Beschreibung]  
-- → Untergrundklasse: [Klasse]  
-- → Relevanz: [Bemessungsbezug]
-
-
+### P6 – Sicherheitsbegrenzung (Disclaimer-Pflicht)
+> **HINWEIS:** Die Daten dienen nur als **indikativen Schätzwert** für die seismische Gefährdung. Sie ersetzen **kein baurechtlich vorgeschriebenes Gutachten** eines Fachingenieurs in Deutschland. Die Untergrundklasse ist eine nicht-validierte LLM-Schätzung.
 ----------------------------------------------------------------------------------- 
 
 ## 5. NORMEN-MODUL (Austauschbar)
